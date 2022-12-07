@@ -49,10 +49,6 @@ requirements:
 test:
   imports:
     - brightway2
-  requires:
-    - pip
-  commands:
-    - pip check
 
 about:
   home: https://brightway.dev
