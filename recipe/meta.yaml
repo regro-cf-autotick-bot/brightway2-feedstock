@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -49,10 +49,6 @@ requirements:
 test:
   imports:
     - brightway2
-  requires:
-    - pip
-  commands:
-    - pip check
 
 about:
   home: https://brightway.dev
