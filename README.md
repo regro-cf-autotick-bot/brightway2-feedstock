@@ -1,11 +1,11 @@
-About brightway2
-================
+About brightway2-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/brightway2-feedstock/blob/main/LICENSE.txt)
 
 Home: https://brightway.dev
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/brightway2-feedstock/blob/main/LICENSE.txt)
 
 Summary: Metapackage for brightway2 imports and documentation 
 
@@ -147,5 +147,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@cmutel](https://github.com/cmutel/)
 * [@m-rossi](https://github.com/m-rossi/)
 
