@@ -1,5 +1,5 @@
 {% set name = "brightway2" %}
-{% set version = "2.4.5" %}
+{% set version = "2.4.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a7ea3394cebda8dca7f433583ef43650188cd5ffe6bb730800361690e41614c8
+  sha256: e72c43913b934cd7b6c46992e172787f98c708d52ec07a3c2acd54c0373a5e72
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
