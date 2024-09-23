@@ -20,6 +20,7 @@ requirements:
     - pip
     - setuptools
   run:
+    - python >=3.7
     - appdirs
     - asteval
     - bw2analyzer <0.10.99
@@ -36,7 +37,6 @@ requirements:
     - peewee >=3.0
     - psutil
     - pyprind
-    - python >=3.6
     - requests
     - scipy
     - stats_arrays >=0.6.5
