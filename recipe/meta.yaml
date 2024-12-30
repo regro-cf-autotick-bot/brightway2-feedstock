@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 0b9fb69885337526dce830f41c137cfec9bb1464979d5472b6563ee9a42c0756
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - appdirs
     - asteval
     - bw2analyzer <0.10.99
@@ -47,6 +47,8 @@ requirements:
     - xlsxwriter
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - brightway2
 
